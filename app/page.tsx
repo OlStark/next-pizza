@@ -1,4 +1,4 @@
-import { Container, Filters, SortPopup, Title, TopBar } from "@/components/shared";
+import { Container, Filters, ProductCard, SortPopup, Title, TopBar } from "@/components/shared";
 import { Categories } from "@/components/shared";
 
 export default function Home() {
@@ -20,8 +20,7 @@ export default function Home() {
           {/* Товары */}
           <div className="flex-1">
             <div className="flex flex-col gap-16">
-              {/* <ProductsGroupList title="Пиццы" items={[1,2,3,4,5]} />
-              <ProductsGroupList title="Комбо" items={[1,2,3,4,5]} /> */}
+             
             </div>
           </div>
         </div>
