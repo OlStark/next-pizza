@@ -31,7 +31,7 @@ model Product {
   id Int @id @default(autoincrement())
 
   name    String
-  mageUrl String
+  imageUrl String
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
@@ -58,7 +58,7 @@ model Ingridient {
 
   name  String
   price Int
-  image String
+  imageUrl String
 
   products  Product[]
   cartItems CartItem[]
@@ -111,6 +111,7 @@ model CartItem {
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+
 }
 
 model Order {
