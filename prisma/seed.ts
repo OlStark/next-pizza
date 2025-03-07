@@ -45,17 +45,11 @@ async function up() {
         ]
     })
 
-    await prisma.category.createMany({
-        data: categories
-    })
+    await prisma.category.createMany({data: categories})
 
-    await prisma.ingridient.createMany({
-        data: _ingredients
-    })
+    await prisma.ingridient.createMany({data: _ingredients})
 
-    await prisma.product.createMany({
-        data: products
-    })
+    await prisma.product.createMany({data: products})
 
     const pizza1 = await prisma.product.create({
         data: {
